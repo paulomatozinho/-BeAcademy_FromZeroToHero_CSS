@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/assets/style.css">
 
-    <style>
+    <!-- <style>
         h1 {
             background: blue;
         }
@@ -32,12 +32,39 @@
         .my-text strong {
             color: aqua;
         }
+    </style> -->
+
+    <style>
+        /* Descendent combinator */
+        /* body ul {
+            background: green;
+            color: red;
+        }
+
+        body section div ul li {
+            background: blue;
+            color: yellow;
+        } */
+
+
+        /* Child combinator */
+        /* body > ul {
+            background: red;
+        }
+
+        div > ul {
+            background: blue;
+        } */
+
+        h1~p {
+            color:green;
+        }
     </style>
 
 </head>
 
 <body>
-    <h1 id="super-title">Testando Especificidade</h1>
+    <!-- <h1 id="super-title">Testando Especificidade</h1>
     <p class="my-text">
         Lorem ipsum dolor sit, <strong>adipisicing</strong> amet consectetur  elit. Obcaecati, doloremque, quia ex rem reprehenderit hic
         ipsam non nam unde cupiditate voluptate. Dolorem voluptatem autem vero at enim. Aut, nostrum minus.
@@ -49,7 +76,32 @@
         ipsam non nam unde
         <br> cupiditate voluptate.<strong> Dolorem voluptatem </strong>autem 
         <br>vero at enim. Aut, nostrum minus.
-    </p>
+    </p> -->
+
+    <!-- <div>
+        <p>Teste</p>
+    </div>
+
+    <ul>
+        <li>Testando Combinadores</li>
+    </ul>
+
+    <div>Outro formato</div>
+
+    <section>
+        <div>
+            <ul>
+                <li>Outro marcador</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <h1>Título</h1>
+    <p>mais um parágrafo</p>
+
+    <button>Enviar</button>
+
+    <p>Outro paragrafo</p>
 
 </body>
 
