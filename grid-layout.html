@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: grid;
+            height: 100vh;
+            grid-template-areas:
+                "header header"
+                "main aside"
+                "footer footer";
+
+                grid-template-rows: 64px 1fr 64px;
+                grid-template-columns: 1fr 128px;
+        }
+
+        header,
+        footer,
+        aside,
+        main {
+            font-size: 24px;
+        }
+
+        header {
+            background: rebeccapurple;
+            grid-area: header;
+        }
+
+        main {
+            background: red;
+            grid-area: main;
+        }
+
+        aside {
+            background: green;
+            grid-area: aside;
+        }
+
+        footer {
+            background: yellow;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <header>Topo</header>
+    <main>
+        Conteudo
+    </main>
+    <aside>
+        Barra Lateral
+    </aside>
+    <footer>Rodapé</footer>
+</body>
+
+</html>
