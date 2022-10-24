@@ -24,7 +24,7 @@ ul li:nth-child(even) {
 ul li:nth-child(odd) {
     background: blue;
     color: white;
-}*/
+}
 
 .btn-submit {
     padding: 12px;
@@ -57,5 +57,32 @@ input[type=text]:hover {
 
 input[type=text]:disabled {
     background: yellow;
+} */
+
+ul {
+position: relative;
+}
+
+ul li::after {
+    content: '';
+    background: rebeccapurple;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+ul li::before {
+    content: '';
+    background: rebeccapurple;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0px;
+}
+
+p::first-line {
+    color: red;
 }
 
